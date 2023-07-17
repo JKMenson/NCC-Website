@@ -112,8 +112,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  /*background: #fff;*/
-  background: #090909;
+  background: #fff;
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
@@ -164,7 +163,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: white;
+  color: rgb(27, 26, 26);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -210,7 +209,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #111010;
+  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
