@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Green Bootstrap Template - Index</title>
+  <title>New Covenant Church</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -85,6 +85,45 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Welcome to <span>New Covenant Church</span></h2>
+              <div id="countdown">
+                <span class="label">Days:</span>
+                <span id="daysValue"></span>
+                <span class="label">Hours:</span>
+                <span id="hoursValue"></span>
+                <span class="label">Minutes:</span>
+                <span id="minutesValue"></span>
+                <span class="label">Seconds:</span>
+                <span id="secondsValue"></span>
+              </div>
+              
+              <script>
+                // Set the target date and time for the event
+                var targetDate = new Date("2023-08-31T00:00:00");
+              
+                // Function to update the countdown timer
+                function updateCountdown() {
+                  var currentDate = new Date();
+                  var timeRemaining = targetDate - currentDate;
+              
+                  // Calculate days, hours, minutes, and seconds
+                  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+              
+                  // Update the countdown values
+                  document.getElementById("daysValue").textContent = days;
+                  document.getElementById("hoursValue").textContent = hours;
+                  document.getElementById("minutesValue").textContent = minutes;
+                  document.getElementById("secondsValue").textContent = seconds;
+              
+                  // Update the countdown every second
+                  setTimeout(updateCountdown, 1000);
+                }
+              
+                // Initial call to start the countdown timer
+                updateCountdown();
+              </script>
             </div>
           </div>
         </div>
@@ -228,45 +267,6 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
                 <!--image goes here-->
-              <div id="countdown">
-                <span class="label">Days:</span>
-                <span id="daysValue"></span>
-                <span class="label">Hours:</span>
-                <span id="hoursValue"></span>
-                <span class="label">Minutes:</span>
-                <span id="minutesValue"></span>
-                <span class="label">Seconds:</span>
-                <span id="secondsValue"></span>
-              </div>
-              
-              <script>
-                // Set the target date and time for the event
-                var targetDate = new Date("2023-08-31T00:00:00");
-              
-                // Function to update the countdown timer
-                function updateCountdown() {
-                  var currentDate = new Date();
-                  var timeRemaining = targetDate - currentDate;
-              
-                  // Calculate days, hours, minutes, and seconds
-                  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-              
-                  // Update the countdown values
-                  document.getElementById("daysValue").textContent = days;
-                  document.getElementById("hoursValue").textContent = hours;
-                  document.getElementById("minutesValue").textContent = minutes;
-                  document.getElementById("secondsValue").textContent = seconds;
-              
-                  // Update the countdown every second
-                  setTimeout(updateCountdown, 1000);
-                }
-              
-                // Initial call to start the countdown timer
-                updateCountdown();
-              </script>
               <h4>July 25-30, 2023</h4>
               <span>Fast and Prayer</span>
               <p>
