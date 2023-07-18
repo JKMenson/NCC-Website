@@ -505,7 +505,21 @@ h6 {
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
+
   }
+
+  #timer{
+    width: auto;
+  }
+
+  #timer p{
+    font-size: 15px;
+  }
+
+  #countdown p{
+    font-size: 15px;
+  }
+
 }
 
 @media (min-width: 1024px) {
