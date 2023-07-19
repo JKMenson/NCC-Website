@@ -1116,13 +1116,6 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-#form{
-  border-top: 3px solid #5cb874;
-  border-bottom: 3px solid #5cb874;
-  width: 610px;
-
-}
-
 form textarea{
   width: 600px;
   height: 170px;
@@ -1411,3 +1404,4 @@ form input,select{
 #footer .credits {
   font-size: 13px;
 }
+
