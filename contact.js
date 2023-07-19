@@ -15,7 +15,7 @@
     const message = document.getElementById('message').value;
 
     // Send the email using EmailJS
-    emailjs.send('service_pt3cyce', 'template_uenngim', {
+    emailjs.send('service_pt3cyce', 'template_9kh4hd6', {
       'from_name': firstName + ' ' + lastName,
       'email': email,
       'country': country,
@@ -23,7 +23,7 @@
     })
       .then(function(response) {
         console.log('Email sent', response.status, response.text);
-        alert('Thank you for contacting us!');
+        alert(' Thank you for contacting New Covenant Church!');
         document.getElementById('contact-form').reset();
       }, function(error) {
         console.log('Email failed to send', error);
